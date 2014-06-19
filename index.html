@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IIMBAA</title>
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/jquerymobile.css" rel="stylesheet" type="text/css">
+<link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="css/owl.theme.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width,  minimum-scale=0.5, maximum-scale=2">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<style>
+#section_three{display:block;}
+</style>
+</head>
+<body onload="home2()">
+<div class="container-fluid">
+<div class="row main_container">
+			<div class="navigation_section">
+				<div class="navi_top"><h2>MENU</h2></div>
+				<div class="menu_list">
+					<ul>
+						<li data="section_three"><span class="menuicon"><img src="images/home.png"></span><span class="menuname"><a href="javascript:void(0);" data="section_three">Home</a></span><div style="clear:both;"></div></li>
+						<li data="section_two"><span class="menuicon"><img src="images/newsicon.png"></span><span class="menuname"><a href="javascript:void(0);" data="section_two">News</a></span><div style="clear:both;"></div></li>
+						<li data="section_four"><span class="menuicon"><img src="images/event.png"></span><span class="menuname"><a href="javascript:void(0);" data="section_four">Event</a></span><div style="clear:both;"></div></li>
+						<li data="section_five"><span class="menuicon"><img src="images/article.png"></span><span class="menuname"><a href="javascript:void(0);" data="section_five">Article</a></span><div style="clear:both;"></div></li>
+						<li data="section_six"><span class="menuicon"><img src="images/member.png"></span><span class="menuname"><a href="javascript:void(0);" data="section_six">Member Search</a></span><div style="clear:both;"></div></li>
+						<li data="section_seven"><span class="menuicon"><img src="images/job.png"></span><span class="menuname"><a href="javascript:void(0);" data="section_seven">Jobs</a></span><div style="clear:both;"></div></li>
+						<li data="section_one" style="border-bottom:none;"><span class="menuicon"><img src="images/login.png"></span><span class="menuname"><a href="javascript:void(0);" data="section_one">Login</a></span><div style="clear:both;"></div></li>
+						<li data="section_eight"><span class="menuicon"><img src="images/login.png"></span><span class="menuname"><a href="javascript:void(0);" data="section_eight">Logout</a></span><div style="clear:both;"></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content_screen">
+				<div id="section_three" class="screen" style="background:#fff;">
+					<div class="row top_block">
+						<div class="col-xs-4 menu_click menu_click2"><img class="menuclick" style="width:25px;height:25px;" src="images/menu.png"></div>
+						<div class="col-xs-7 top_heading">Home</div>
+					</div>
+					<div style="" class="newsarea">
+						<div class="row headingstrip">
+							<h2>News</h2>
+						</div>
+						<div class="row home_box" >
+							<div class="row " style="text-align:center;margin-top:10px;margin-left:0px;margin-right:0px; ">
+								<div id="owl-demo" class="owl-carousel">
+								</div>
+							</div>
+						</div>	
+						<div style="clear:both;"></div>
+					</div>	
+					<div style="position:relative; background:#fff;  margin-top:20px; padding-bottom:10px; box-shadow: 0 4px 2px -2px gray;">
+						<div class="row headingstrip">
+							<h2>Events</h2>
+						</div>
+						<div class="row home_box">
+								<div class="row " style="text-align:center;margin-top:10px;margin-left:0px;margin-right:0px;">
+									<div id="owl-demo2" class="owl-carousel">
+									</div>
+								</div>
+						</div>
+					</div>
+					<div style="position:relative; background:#fff;  margin-top:20px; padding-bottom:10px; box-shadow: 0 4px 2px -2px gray;">
+						<div class="row headingstrip">
+							<h2>Events</h2>
+						</div>
+						<div class="row home_box">
+								<div class="row " style="text-align:center;margin-top:10px;margin-left:0px;margin-right:0px;">
+									<div id="owl-demo3" class="owl-carousel">
+									</div>
+								</div>
+						</div>
+					</div>
+									
+				</div>
+				<div id="section_one" class="screen">
+					<div class="row top_block">
+						<div class="col-xs-4 menu_click"><img class="menuclick" style="width:25px;height:25px;" src="images/menu.png"></div>
+						<div class="col-xs-7 top_heading">Login</div>
+					</div>
+					<div class="row icon_box">
+						
+					</div>
+					<div class="row form_box">
+						<div class="row form_heading">
+							<h3>Welcome !!</h3>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="user_name" placeholder="User name">
+						</div>	
+						<div class="form-group">
+							<input type="password" class="form-control" id="user_password" placeholder="Password">
+						</div>
+						<div class="form-group">
+								<div class="col-xs-2"><input  type="checkbox" class="form-control" id="user_remberme" value="remember me"></div>
+								<div class="col-xs-10 sign_in_continer"><button type="submit" id="login_submit" class="btn btn-default sign_in">Sign in</button></div>
+								<div style="clear:both;"></div>	
+							  
+						</div>	
+					</div>	
+				</div>
+				<div id="section_two" class="screen">
+					<div class="row top_block">
+						<div class="col-xs-4 menu_click"><img class="menuclick" style="width:25px;height:25px;" src="images/menu.png"></div>
+						<div class="col-xs-7 top_heading">News</div>
+					</div>
+					<div class="row icon_box">
+						
+					</div>
+					<div class="row news_box">
+						<div class="loading"></div>
+						<ul class="news_list" id="news_section">
+							
+							
+							
+						</ul>
+					</div>	
+				</div>
+				<div id="section_eight" class="screen">
+					<div class="row top_block">
+						<div class="col-xs-4 menu_click"><button type="button" class="btn btn-default news_back">< Back</button></div>
+						<div class="col-xs-7 top_heading" style="text-indent:45px;">More Info</div>
+					</div>
+					<div class="row icon_box">
+						
+					</div>
+					<div class="row news_box">
+						<div class="loading"></div>
+						<div class="dsnews_list" >
+						<div id="news_description" class="more_info">
+							
+							
+							
+						</div>
+						</div>
+					</div>	
+				</div>
+				<div id="section_four" class="screen">
+					<div class="row top_block">
+						<div class="col-xs-4 menu_click"><img class="menuclick" style="width:25px;height:25px;" src="images/menu.png"></div>
+						<div class="col-xs-7 top_heading">Events</div>
+					</div>
+					<div class="row icon_box">
+						
+					</div>
+					<div class="row news_box">
+						<div class="loading"></div>
+						<ul class="news_list" id="event_section">
+							
+							
+						</ul>
+					</div>	
+				</div>
+				<div id="section_nine" class="screen">
+					<div class="row top_block">
+						<div class="col-xs-4 menu_click"><button type="button" class="btn btn-default event_back">< Back</button></div>
+						<div class="col-xs-7 top_heading" style="text-indent:45px;">More Info</div>
+					</div>
+					<div class="row icon_box">
+						
+					</div>
+					<div class="row news_box">
+						<div class="loading"></div>
+						<div class="dsnews_list" >
+						<div id="event_description" class="more_info">
+							
+							
+							
+						</div>
+						</div>
+					</div>	
+				</div>
+				<div id="section_five" class="screen">
+					<div class="row top_block">
+						<div class="col-xs-4 menu_click"><img class="menuclick" style="width:25px;height:25px;" src="images/menu.png"></div>
+						<div class="col-xs-7 top_heading">Articles</div>
+					</div>
+					<div class="row icon_box">
+						
+					</div>
+					<div class="row news_box">
+						<div class="loading"></div>
+						<ul class="news_list" id="articles_section">
+							
+							
+						</ul>
+					</div>	
+				</div>
+				<div id="section_ten" class="screen">
+					<div class="row top_block">
+						<div class="col-xs-4 menu_click"><button type="button" class="btn btn-default article_back">< Back</button></div>
+						<div class="col-xs-7 top_heading" style="text-indent:45px;">More Info</div>
+					</div>
+					<div class="row icon_box">
+						
+					</div>
+					<div class="row news_box">
+						<div class="dsnews_list" >
+						<div id="article_description" class="more_info">
+							
+							
+							
+						</div>
+						</div>
+					</div>	
+				</div>
+				<div id="section_six" class="screen">
+					<div class="row top_block">
+						<div class="col-xs-4 menu_click"><img class="menuclick" style="width:25px;height:25px;" src="images/menu.png"></div>
+						<div class="col-xs-7 top_heading">Member</div>
+					</div>
+					
+					<div class="row news_box">
+						<div class="loading"></div>
+						<ul class="news_list" id="member_section" >
+							
+							
+						</ul>
+					</div>	
+				</div>
+				<div id="section_seven" class="screen">
+					<div class="row top_block">
+						<div class="col-xs-4 menu_click"><img class="menuclick" style="width:25px;height:25px;" src="images/menu.png"></div>
+						<div class="col-xs-7 top_heading">Jobs</div>
+					</div>
+					<div class="row icon_box">
+						
+					</div>
+					<div class="row news_box">
+						<ul class="news_list"  id="jobs_section" >
+							<li>
+								<div class="row">
+									<div class="col-xs-3"><img src="images/No_image.png"/></div>
+									<div class="col-xs-8 news_expert">
+									<h3>Dr. Kiran Mazumdar Shaw is Chairperson of Board of Govt..</h3>
+									<p class="newsdatetime">Wednesday 8/5/2014 08:44:54</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-xs-3"><img src="images/No_image.png"/></div>
+									<div class="col-xs-8 news_expert">
+									<h3>Dr. Kiran Mazumdar Shaw is Chairperson of Board of Govt..</h3>
+									<p class="newsdatetime">Wednesday 8/5/2014 08:44:54</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-xs-3"><img src="images/No_image.png"/></div>
+									<div class="col-xs-8 news_expert">
+									<h3>Dr. Kiran Mazumdar Shaw is Chairperson of Board of Govt..</h3>
+									<p class="newsdatetime">Wednesday 8/5/2014 08:44:54</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-xs-3"><img src="images/No_image.png"/></div>
+									<div class="col-xs-8 news_expert">
+									<h3>Dr. Kiran Mazumdar Shaw is Chairperson of Board of Govt..</h3>
+									<p class="newsdatetime">Wednesday 8/5/2014 08:44:54</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-xs-3"><img src="images/No_image.png"/></div>
+									<div class="col-xs-8 news_expert">
+									<h3>Dr. Kiran Mazumdar Shaw is Chairperson of Board of Govt..</h3>
+									<p class="newsdatetime">Wednesday 8/5/2014 08:44:54</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-xs-3"><img src="images/No_image.png"/></div>
+									<div class="col-xs-8 news_expert">
+									<h3>Dr. Kiran Mazumdar Shaw is Chairperson of Board of Govt..</h3>
+									<p class="newsdatetime">Wednesday 8/5/2014 08:44:54</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-xs-3"><img src="images/No_image.png"/></div>
+									<div class="col-xs-8 news_expert">
+									<h3>Dr. Kiran Mazumdar Shaw is Chairperson of Board of Govt..</h3>
+									<p class="newsdatetime">Wednesday 8/5/2014 08:44:54</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-xs-3"><img src="images/No_image.png"/></div>
+									<div class="col-xs-8 news_expert">
+									<h3>Dr. Kiran Mazumdar Shaw is Chairperson of Board of Govt..</h3>
+									<p class="newsdatetime">Wednesday 8/5/2014 08:44:54</p>
+									</div>
+								</div>
+							</li>
+							
+						</ul>
+					</div>	
+				</div>
+			</div>
+</div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquerymobile.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
