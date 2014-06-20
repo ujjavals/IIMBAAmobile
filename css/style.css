@@ -205,3 +205,6 @@ font-size: 13px;}
     bottom: 0px;
 	-webkit-overflow-scrolling:touch;
 }
+.PDF_area{margin: 24px 0px 0px;}
+.PDF_area p{margin-bottom:4px;}
+.PDF_area p a{color:#AB0104;}
