@@ -148,14 +148,35 @@ p{text-align:justify;}
 border-radius: 3px; text-align: center; }
 .owl-item{margin:0px 2px;}
 .owl-item img{width:100%;}
-.item_box{position:relative;}
+.item_box{position:relative; cursor:pointer;}
 .item_content{position: absolute;bottom:0px; text-align:center;width:100%; }
 .item_content h1{font-size: 8px;
 text-align: center;
+text-shadow:none;
 color: #FFF;
 font-family: arial;}
 .trans_background{width: 100%; right: 0px; position: absolute; height: 38px; bottom: 0px; background: none repeat scroll 0% 0% rgb(0, 0, 0); opacity: 0.5;}
 .headingstrip{background:#AB0104; margin:15px 0px 0px;}
-.headingstrip h2{color:#fff; font-size:16px; text-indent:10px;margin:0px; padding:6px 0px;}
+.headingstrip h2{color:#fff; font-size:16px; text-indent:10px;margin:0px; padding:6px 0px; text-shadow:none;}
 .newsarea{position:relative; background:#fff; padding-bottom:10px; box-shadow: 0 4px 2px -2px gray;}
 .home_box{min-height:110px; background:url('AjaxLoader.gif') no-repeat scroll center center transparent;}
+.imagescontent{ background:url('AjaxLoader.gif') no-repeat scroll center center transparent;}
+.magzinearea{background:#fff;}
+.hidden_area{position: fixed;
+top: 100%;
+left: 0px;
+background: none repeat scroll 0% 0% #FFF;
+width: 100%;
+padding: 10px 5px; overflow:auto; height:100%; display:none;}
+.headingcontent .menu_click{padding:0px 0px;}
+.contentdescription{margin:10px 0px 0px 0px; padding:0px 12px;}
+.contentdescription h3{font-size:20px; color:#AD0004;}
+.contentss{font-size:13px;text-align:justify;}
+.contentss p{font-size:13px;}
+.contentimage{margin:0px 0px 8px 0px;}
+.contentimage img{width:100%; padding:2px; border:1px solid #ccc;}
+.contentdescription{display:none;}
+.hidden_back{padding:8px 0px;}
+.hiddensection{display:none;}
+blockquote{padding:0px; margin:8px 0px;font-size:13px;border:none;}
+blockquote ul li{margin:8px 0px;}
