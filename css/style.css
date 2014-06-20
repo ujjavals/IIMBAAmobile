@@ -157,7 +157,7 @@ color: #FFF;
 font-family: arial;}
 .trans_background{width: 100%; right: 0px; position: absolute; height: 38px; bottom: 0px; background: none repeat scroll 0% 0% rgb(0, 0, 0); opacity: 0.5;}
 .headingstrip{background:#AB0104; margin:15px 0px 0px;}
-.headingstrip h2{color:#fff; font-size:16px; text-indent:10px;margin:0px; padding:6px 0px; text-shadow:none;}
+.headingstrip h2{color:#fff; font-size:16px; text-indent:10px;margin:0px; padding:6px 0px; text-shadow:none; float:left;}
 .newsarea{position:relative; background:#fff; padding-bottom:10px; box-shadow: 0 4px 2px -2px gray;}
 .home_box{min-height:110px; background:url('AjaxLoader.gif') no-repeat scroll center center transparent;}
 .imagescontent{ background:url('AjaxLoader.gif') no-repeat scroll center center transparent;}
@@ -180,3 +180,9 @@ padding: 10px 5px; overflow:auto; height:100%; display:none;}
 .hiddensection{display:none;}
 blockquote{padding:0px; margin:8px 0px;font-size:13px;border:none;}
 blockquote ul li{margin:8px 0px;}
+.moreoption{float:right; width:50px; margin-top:5px;}
+.moreoption a{color:#fff !important; text-decoration:none; font-size:13px !important; font-weight:normal !important; }
+.btn.btn-default.hidden_back.ui-btn.ui-shadow.ui-corner-all{width: 62% !important;
+font-weight: normal !important;
+font-size: 13px;}
+.header_images{margin-top:4px;}
