@@ -20,6 +20,7 @@ $(document).ready(function(){
 	 
 	
 	    $(".menu_click2").click(function(){
+			alert("here");
 				if(right == 0){
 				$(".content_screen").animate({right:'-80%'},200);
 				right=250;
@@ -164,12 +165,13 @@ $(document).ready(function(){
 	});
 	
 	$('.hidden_back').click(function(){
+		
 		$('.contentdescription').css("display","none");
-		//$('.hidden_area').slideUp();
+		
 		$('.hiddensection').css("display","none");
 		
 		$('.hidden_area').animate({top:'100%'},200);
-		//$('.hidden_area').css("display","none");
+	
 		
 	});
 						
