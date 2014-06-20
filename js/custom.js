@@ -176,7 +176,7 @@ $(document).ready(function(){
 	});
 						
 	
-	$(".magzinearea .item_box").click(function(){
+	/*$(".magzinearea .item_box").click(function(){
 					window.open('http://www.iimbaa.org/IIMBAA/images/magazines/IIMB_Alumni_Magzine_Summer%202013_FINAL.pdf', '_blank', 'location=no');
 					/* 	var datavalue =  $(this).attr("data");
 						classdatavalue = "."+datavalue;
@@ -186,7 +186,7 @@ $(document).ready(function(){
 						$(".magzine_content").css("display","block")
 						$('.hidden_area').css("display","block");
 						$('.hidden_area').animate({top:'0%'},200); */
-					}); 
+					/*}); */
 	
 	$("#login_submit").click(function(){
 			var user_name = document.getElementById('user_name').value; 
