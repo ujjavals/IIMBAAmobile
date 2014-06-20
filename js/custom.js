@@ -177,15 +177,15 @@ $(document).ready(function(){
 						
 	
 	$(".magzinearea .item_box").click(function(){
-					
-						var datavalue =  $(this).attr("data");
+					window.open('http://www.iimbaa.org/IIMBAA/images/magazines/IIMB_Alumni_Magzine_Summer%202013_FINAL.pdf', '_blank', 'location=no');
+					/* 	var datavalue =  $(this).attr("data");
 						classdatavalue = "."+datavalue;
 						$(classdatavalue).css("display","block");
 						//$(".hidden_area").slideDown();
 						//animate({right:'0%'},200);
 						$(".magzine_content").css("display","block")
 						$('.hidden_area').css("display","block");
-						$('.hidden_area').animate({top:'0%'},200);
+						$('.hidden_area').animate({top:'0%'},200); */
 					}); 
 	
 	$("#login_submit").click(function(){
