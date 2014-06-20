@@ -14,109 +14,39 @@ var location_value ="";
 var right = 0;
 			var started =0;
 			var ended = 4;
+			
 $(document).ready(function(){
 		
 	 
 	
-	 /*   $(".menu_click2").click(function(){
-		 
-		//alert("hereee");
-		if(right == 0){
-		$(".content_screen").animate({right:'-80%'},200);
-		right=250;
-		
-		}else{
-			$(".content_screen").animate({right:'0%'},200);
-			right= 0;
-		}
-	});  */  
-	 /* $("#owl-demo").owlCarousel({
-		jsonPath : 'custom.json',
-		itemsMobile : [479,2],
-		 pagination : false,
-		jsonSuccess : customDataSuccess
-		});
-		 
-		function customDataSuccess(data){
-		var content = "";
-		for(var i in data["items"]){
-		var img = data["items"][i].img;
-		var alt = data["items"][i].alt;
-		 
-		//content += "<img class='lazyOwl' src=\"" +img+ "\" alt=\"" +alt+ "\">"
-		content +="<div class='item_box'><div class='imagescontent'><img src='"+img+"'/></div><div class='trans_background'></div><div class='item_content'><h1>"+alt+"</h1></div></div>";
-		}
-		$("#owl-demo").html(content);
-		} */
-		
-		/*s*********/
-		
-		/*  $("#owl-demo2").owlCarousel({
-		jsonPath : 'custom.json',
-		itemsMobile : [479,2],
-		 pagination : false,
-		jsonSuccess : customDataSuccess2
-		});
-		 
-		function customDataSuccess2(data){
-		var content = "";
-		for(var i in data["items"]){
-		var img = data["items"][i].img;
-		var alt = data["items"][i].alt;
-		 
-		//content += "<img class='lazyOwl' src=\"" +img+ "\" alt=\"" +alt+ "\">"
-		content +="<div class='item_box'><div class='imagescontent'><img src='"+img+"'/></div><div class='trans_background'></div><div class='item_content'><h1>"+alt+"</h1></div></div>";
-		}
-		$("#owl-demo2").html(content);
-		}
-		 */
-		/*s*********/
-		
-		/*  $("#owl-demo3").owlCarousel({
-		jsonPath : 'custom.json',
-		itemsMobile : [479,2],
-		 pagination : false,
-		jsonSuccess : customDataSuccess3
-		});
-		 
-		function customDataSuccess3(data){
-		var content = "";
-		for(var i in data["items"]){
-		var img = data["items"][i].img;
-		var alt = data["items"][i].alt;
-		 
-		//content += "<img class='lazyOwl' src=\"" +img+ "\" alt=\"" +alt+ "\">"
-		content +="<div class='item_box'><div class='imagescontent'><img src='"+img+"'/></div><div class='trans_background'></div><div class='item_content'><h1>"+alt+"</h1></div></div>";
-		}
-		$("#owl-demo3").html(content);
-		}
-		 */
+	    $(".menu_click2").click(function(){
+				if(right == 0){
+				$(".content_screen").animate({right:'-80%'},200);
+				right=250;
+				
+				}else{
+					$(".content_screen").animate({right:'0%'},200);
+					right= 0;
+				}
+		});  
+	 
 		 $("#owl-demo3").owlCarousel({
 					items : 4,
-					itemsMobile : [479,2],
+					itemsMobile : [479,3],
 					pagination : false,
 					 navigation : false,
 					lazyLoad : true,
 					
 					}); 
 					 
-	 $(".menu_click2").on("tap",function(){
 		
-		if(right == 0){
-		$(".content_screen").animate({right:'-80%'},200);
-		right=250;
-		
-		}else{
-			$(".content_screen").animate({right:'0%'},200);
-			right= 0;
-		}
-	});   
 	
 	$(".menu_list ul li").click(function(){
-			$('.news_list').empty();
+			
+			 $('.news_list').empty();
 			var data = $(this).attr("data");
 			var idname = "#"+data;
-			//alert(idname);
+			
 			$(".screen").css("display","none");
 			$(idname).css("display","block");
 			$(".content_screen").animate({right:'0px'});
@@ -163,9 +93,9 @@ $(document).ready(function(){
 			if(data=="section_eight"){
 				window.location = "login.html";
 			
-			}
+			} 
 			
-	});
+	}); 
 	
 	$('.news_back').click(function(){
 						$("#section_eight").slideUp();
@@ -335,13 +265,13 @@ function news(){
 	$(".loading").css("display","block");
 		$.ajax({
 						
-						url: "http://www.iimbaa.org/IIMBAA/mobile/news2.php",
+						url: "http://www.iimbaa.org/IIMBAA/mobile/news3.php",
 						type: "POST",
 						dataType: "json",
-						//data: {
-						//"start": started,
-						//"end": ended,
-						//},
+						data: {
+						"start": 0,
+						"end": 9,
+						},
 						
 						success: function (res) {
 									
@@ -351,7 +281,7 @@ function news(){
 								
 								  var images_url = res[index]['image_intro'];
 								  if(images_url ==""){
-									images_url ="images/No_image.png";
+									images_url ="css/logo99.png";
 								 }
 								$("#news_section").append("<li data='"+index+"'><div class='row'><div class='col-xs-4 list_images'><img src='"+images_url+"'/></div><div class='col-xs-8 news_expert'><h3>"+res[index]['title']+"</h3><p class='newsdatetime'>"+res[index]['publish_up']+"</p></div></div></li>");
 							} 
