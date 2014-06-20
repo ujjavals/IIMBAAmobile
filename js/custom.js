@@ -283,7 +283,7 @@ function news(){
 								
 								  var images_url = res[index]['image_intro'];
 								  if(images_url ==""){
-									images_url ="css/logo99.png";
+									images_url ="http://www.iimbaa.org/IIMBAA/mobile/images/logo99.png";
 								 }
 								$("#news_section").append("<li data='"+index+"'><div class='row'><div class='col-xs-4 list_images'><img src='"+images_url+"'/></div><div class='col-xs-8 news_expert'><h3>"+res[index]['title']+"</h3><p class='newsdatetime'>"+res[index]['publish_up']+"</p></div></div></li>");
 							} 
@@ -351,7 +351,7 @@ function eventss(){
 						
 						  var images_url = res[index]['image_intro'];
 						  if(images_url ==""){
-							images_url ="images/No_image.png";
+							images_url ="http://www.iimbaa.org/IIMBAA/mobile/images/logo99.png";
 						 }
 						$("#event_section").append("<li data='"+index+"'><div class='row'><div class='col-xs-3 list_images'><img src='"+images_url+"'/></div><div class='col-xs-8 news_expert'><h3>"+res[index]['title']+"</h3><p class='newsdatetime'>"+res[index]['publish_up']+"</p></div></div></li>");
 					} 
@@ -419,7 +419,7 @@ function article(){
 						//$("#location").append("<option value='"+res[index]['location_name']+"'>"+res[index]['location_name']+"</option>");
 						  var images_url = res[index]['image_intro'];
 						  if(images_url ==""){
-							images_url ="images/No_image.png";
+							images_url ="http://www.iimbaa.org/IIMBAA/mobile/images/logo99.png";
 						 }
 						$("#articles_section").append("<li data='"+index+"'><div class='row'><div class='col-xs-3 list_images'><img src='"+images_url+"'/></div><div class='col-xs-8 news_expert'><h3>"+res[index]['title']+"</h3><p class='newsdatetime'>"+res[index]['publish_up']+"</p></div></div></li>");
 					} 
@@ -506,7 +506,7 @@ function memberss(){
 						
 						
 						$("#member_description").html("<div id='member_description_"+indexid+"'><\/div>");
-						$("#member_description_"+indexid+"").append("<div class='row'><div class='col-xs-4 list_images'><img src='images\/No_image.png'><\/div><div class='col-xs-8 news_expert'><h3>"+res[indexid]['firstname']+" "+res[indexid]['lastname']+"<\/h3><p class='newsdatetime'><strong>D.O.B : <\/strong>"+res[indexid]['cb_dob']+"<\/p><\/div><\/div>");
+						$("#member_description_"+indexid+"").append("<div class='row'><div class='col-xs-4 list_images'><img src='http://www.iimbaa.org/IIMBAA/mobile/images/logo99.png'><\/div><div class='col-xs-8 news_expert'><h3>"+res[indexid]['firstname']+" "+res[indexid]['lastname']+"<\/h3><p class='newsdatetime'><strong>D.O.B : <\/strong>"+res[indexid]['cb_dob']+"<\/p><\/div><\/div>");
 						//$("#member_description").html("<div id='member_description_"+indexid+"'><div class='col-xs-4 list_images'><img src='images\/No_image.png'><\/div><div class='col-xs-8 news_expert'><h3>"+res[index]['firstname']+" "+res[index]['lastname']+"<\/h3><p class='newsdatetime'><strong>D.O.B : <\/strong>"+res[index]['cb_dob']+"<\/p><\/div><\/div>");
 						
 						//$("#member_description").html("<div id='member_description_"+indexid+"'><div class='row'><div class='col-xs-4 list_images'><img src='images\/No_image.png'><\/div><div class='col-xs-8 news_expert'><h3>"+res[index]['firstname']+" "+res[index]['lastname']+"<\/h3><p class='newsdatetime'><strong>D.O.B : <\/strong>"+res[index]['cb_dob']+"<\/p><\/div><div style='clear:both;'><\/div></div>");
@@ -1015,7 +1015,7 @@ function member_search(){
 						
 						
 						$("#member_description2").html("<div id='member_description2_"+indexid+"'><\/div>");
-						$("#member_description2_"+indexid+"").append("<div class='row'><div class='col-xs-4 list_images'><img src='images\/No_image.png'><\/div><div class='col-xs-8 news_expert'><h3>"+res[indexid]['firstname']+" "+res[indexid]['lastname']+"<\/h3><p class='newsdatetime'><strong>D.O.B : <\/strong>"+res[indexid]['cb_dob']+"<\/p><\/div><\/div>");
+						$("#member_description2_"+indexid+"").append("<div class='row'><div class='col-xs-4 list_images'><img src='//www.iimbaa.org/IIMBAA/mobile/images/logo99.png'><\/div><div class='col-xs-8 news_expert'><h3>"+res[indexid]['firstname']+" "+res[indexid]['lastname']+"<\/h3><p class='newsdatetime'><strong>D.O.B : <\/strong>"+res[indexid]['cb_dob']+"<\/p><\/div><\/div>");
 						//$("#member_description").html("<div id='member_description_"+indexid+"'><div class='col-xs-4 list_images'><img src='images\/No_image.png'><\/div><div class='col-xs-8 news_expert'><h3>"+res[index]['firstname']+" "+res[index]['lastname']+"<\/h3><p class='newsdatetime'><strong>D.O.B : <\/strong>"+res[index]['cb_dob']+"<\/p><\/div><\/div>");
 						
 						//$("#member_description").html("<div id='member_description_"+indexid+"'><div class='row'><div class='col-xs-4 list_images'><img src='images\/No_image.png'><\/div><div class='col-xs-8 news_expert'><h3>"+res[index]['firstname']+" "+res[index]['lastname']+"<\/h3><p class='newsdatetime'><strong>D.O.B : <\/strong>"+res[index]['cb_dob']+"<\/p><\/div><div style='clear:both;'><\/div></div>");
