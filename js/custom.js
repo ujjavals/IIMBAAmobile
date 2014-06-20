@@ -51,7 +51,7 @@ $(document).ready(function(){
 		
 		/*s*********/
 		
-		 $("#owl-demo2").owlCarousel({
+		/*  $("#owl-demo2").owlCarousel({
 		jsonPath : 'custom.json',
 		itemsMobile : [479,2],
 		 pagination : false,
@@ -69,10 +69,10 @@ $(document).ready(function(){
 		}
 		$("#owl-demo2").html(content);
 		}
-		
+		 */
 		/*s*********/
 		
-		 $("#owl-demo3").owlCarousel({
+		/*  $("#owl-demo3").owlCarousel({
 		jsonPath : 'custom.json',
 		itemsMobile : [479,2],
 		 pagination : false,
@@ -90,8 +90,16 @@ $(document).ready(function(){
 		}
 		$("#owl-demo3").html(content);
 		}
-		
-	
+		 */
+		 $("#owl-demo3").owlCarousel({
+					items : 4,
+					itemsMobile : [479,2],
+					pagination : false,
+					 navigation : false,
+					lazyLoad : true,
+					
+					}); 
+					 
 	 $(".menu_click2").on("tap",function(){
 		
 		if(right == 0){
@@ -224,9 +232,29 @@ $(document).ready(function(){
 						
 	
 	});
+	
+	$('.hidden_back').click(function(){
+		$('.contentdescription').css("display","none");
+		//$('.hidden_area').slideUp();
+		$('.hiddensection').css("display","none");
+		
+		$('.hidden_area').animate({top:'100%'},200);
+		//$('.hidden_area').css("display","none");
+		
+	});
 						
 	
-	
+	$(".magzinearea .item_box").click(function(){
+					
+						var datavalue =  $(this).attr("data");
+						classdatavalue = "."+datavalue;
+						$(classdatavalue).css("display","block");
+						//$(".hidden_area").slideDown();
+						//animate({right:'0%'},200);
+						$(".magzine_content").css("display","block")
+						$('.hidden_area').css("display","block");
+						$('.hidden_area').animate({top:'0%'},200);
+					}); 
 	
 	$("#login_submit").click(function(){
 			var user_name = document.getElementById('user_name').value; 
@@ -640,10 +668,10 @@ function home(){
 }
 
 function home2(){
-		//alert("sdfsdfsdsd");
-		var started = 4;
+		/*newssection*********/
+		var started = 0;
 		var ended = 4;
-	 $.ajax({
+		$.ajax({
 				
 				url: "http://www.iimbaa.org/IIMBAA/mobile/news3.php",
 				type: "POST",
@@ -658,24 +686,44 @@ function home2(){
 					for (index = 0; index < res.length; ++index) {
 						//alert(res[index]['title']);
 						 var img =  res[index]['image_intro'];
+						  var valuetest = 0;
 						if(img == ""){
-							img = "assets/owl1.jpg";
+							img = "assets/home_image.jpg";
+							valuetest = 1;
 						}
 						var title = res[index]['title'];
-						$("#owl-demo").append("<div class='item_box'><div class='imagescontent'><img width='161px' height='106px' class='lazyOwl' src='"+img+"'></div><div class='trans_background'></div><div class='item_content'><h1>"+title+"</h1></div></div>"); 
+						var content = res[index]['introtext'];
+						$("#owl-demo").append("<div class='item_box' data='id_"+index+"'><div class='imagescontent'><img width='161px' height='106px' class='lazyOwl' src='"+img+"'></div><div class='trans_background'></div><div class='item_content'><h1>"+title+"</h1></div></div>"); 
+						if(valuetest == 0){
+					
+						$(".newsarea_content").append("<div class='contentdescription id_"+index+"'><h3>"+title+"</h3><div class='contentimage'><img class='lazyOwl' src='"+img+"' height='auto' width='auto'></div><div class='contentss'><p>"+content+"</p></div></div>");
+						}else{
+						
+							$(".newsarea_content").append("<div class='contentdescription id_"+index+"'><h3>"+title+"</h3><div class='contentss'><p>"+content+"</p></div></div>");
+						}
 						
 					} 
 					
-					 $("#owl-demo").owlCarousel({
-					items : 4,
-					itemsMobile : [479,2],
-					pagination : false,
-					 navigation : false,
-					lazyLoad : true,
-					
+					$("#owl-demo").owlCarousel({
+						items : 4,
+						itemsMobile : [479,2],
+						pagination : false,
+						 navigation : false,
+						lazyLoad : true,
 					}); 
 					 
+					$(".newsarea2 .item_box").click(function(){
 					
+						var datavalue =  $(this).attr("data");
+						classdatavalue = "."+datavalue;
+						$(classdatavalue).css("display","block");
+						//$(".hidden_area").slideDown();
+						//animate({right:'0%'},200);
+						$(".newsarea_content").css("display","block")
+						$('.hidden_area').css("display","block");
+						$('.hidden_area').animate({top:'0%'},200);
+					}); 
+					$(".newsarea2").css("background","#fff");
 					 
 					   
 					
@@ -686,6 +734,130 @@ function home2(){
 				
 				
 			}); 
+			/*eventsection*********/
+			
+		
+		$.ajax({
+				
+				url: "http://www.iimbaa.org/IIMBAA/mobile/events2.php",
+				type: "POST",
+				dataType: "json",
+				data: {
+				"start": started,
+				"end": ended,
+				},
+				
+				success: function (res) {
+						
+					for (index = 0; index < res.length; ++index) {
+						//alert(res[index]['title']);
+						 var img =  res[index]['image_intro'];
+						  var valuetest = 0;
+						if(img == ""){
+							img = "assets/home_image.jpg";
+							valuetest = 1;
+						}
+						
+						var title = res[index]['title'];
+						var content = res[index]['introtext'];
+						$("#owl-demo2").append("<div class='item_box' data='id2_"+index+"'><div class='imagescontent'><img width='161px' height='106px' class='lazyOwl' src='"+img+"'></div><div class='trans_background'></div><div class='item_content'><h1>"+title+"</h1></div></div>"); 
+						
+						if(valuetest == 0){
+					
+						$(".event_content").append("<div class='contentdescription id2_"+index+"'><h3>"+title+"</h3><div class='contentimage'><img class='lazyOwl' src='"+img+"' height='auto' width='auto'></div><div class='contentss'><p>"+content+"</p></div></div>");
+						}else{
+						
+							$(".event_content").append("<div class='contentdescription id2_"+index+"'><h3>"+title+"</h3><div class='contentss'><p>"+content+"</p></div></div>");
+						}
+						
+					
+					
+					} 
+					
+					
+					 $("#owl-demo2").owlCarousel({
+					items : 4,
+					itemsMobile : [479,2],
+					pagination : false,
+					 navigation : false,
+					lazyLoad : true,
+					
+					}); 
+					
+					$(".eventarea2 .item_box").click(function(){
+					
+						var datavalue =  $(this).attr("data");
+						classdatavalue = "."+datavalue;
+						$(classdatavalue).css("display","block");
+						//$(".hidden_area").slideDown();
+						//animate({right:'0%'},200);
+						$(".event_content").css("display","block")
+						$('.hidden_area').css("display","block");
+						$('.hidden_area').animate({top:'0%'},200);
+					}); 
+					
+					 
+					$(".eventarea2").css("background","#fff");
+					 
+					   
+					
+				},
+				error: function(rtn){
+					alert("Seems you are offline. Please check your internet connection.");
+				}
+				
+				
+			}); 
+			
+			 	/*magzinesection*********/
+			
+		
+		/*$.ajax({
+				
+				url: "http://www.iimbaa.org/IIMBAA/mobile/magazine2.php",
+				type: "POST",
+				dataType: "json",
+				data: {
+				"start": started,
+				"end": ended,
+				},
+				
+				success: function (res) {
+						
+					for (index = 0; index < res.length; ++index) {
+						//alert(res[index]['title']);
+						 var img =  res[index]['image'];
+						if(img == ""){
+							img = "assets/owl1.jpg";
+						}
+						var title = res[index]['imagetitle'];
+						var link = res[index]['link'];
+						$("#owl-demo3").append("<div class='item_box'><div class='imagescontent'><a href='+link+'><img width='161px' height='106px' class='lazyOwl' src='"+img+"'></a></div><div class='trans_background'></div><div class='item_content'><h1>"+title+"</h1></div></div>"); 
+						
+					} 
+					
+					 $("#owl-demo3").owlCarousel({
+					items : 4,
+					itemsMobile : [479,2],
+					pagination : false,
+					 navigation : false,
+					lazyLoad : true,
+					
+					}); 
+					 
+					$(".magzinearea").css("background","#fff");
+					 
+					   
+					
+				},
+				error: function(rtn){
+					alert("Seems you are offline. Please check your internet connection.");
+				}
+				
+				
+			});  */
+			
+		
 
 
 }
