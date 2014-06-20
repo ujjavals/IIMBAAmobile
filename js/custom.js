@@ -20,7 +20,7 @@ $(document).ready(function(){
 	 
 	
 	    $(".menu_click2").click(function(){
-			alert("here");
+			//alert("here");
 				if(right == 0){
 				$(".content_screen").animate({right:'-80%'},200);
 				right=250;
