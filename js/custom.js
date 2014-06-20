@@ -688,7 +688,7 @@ function home2(){
 						 var img =  res[index]['image_intro'];
 						  var valuetest = 0;
 						if(img == ""){
-							img = "assets/home_image.jpg";
+							img = "http://www.iimbaa.org/IIMBAA/mobile/images/home_image.jpg";
 							valuetest = 1;
 						}
 						var title = res[index]['title'];
@@ -754,7 +754,7 @@ function home2(){
 						 var img =  res[index]['image_intro'];
 						  var valuetest = 0;
 						if(img == ""){
-							img = "assets/home_image.jpg";
+							img = "http://www.iimbaa.org/IIMBAA/mobile/images/home_image.jpg";
 							valuetest = 1;
 						}
 						
