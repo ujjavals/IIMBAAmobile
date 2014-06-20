@@ -24,7 +24,7 @@ z-index: 99;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-height:100%;width:100%; overflow-x: hidden; overflow-y: auto;
+height:100%;width:100%; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling:touch;
 display:block;
 z-index:999;
 /* min-width:320px; */
@@ -76,7 +76,7 @@ li[data="section_six"],li[data="section_seven"],li[data="section_eight"]{  displ
 #member_section li p{margin:2px 0;}
 .top_heading{font-size:20px; padding:15px 0px 0px 25px;}
 .news_box{margin:20px 0px 0px;background:#fff; height: 80%;  overflow-x: hidden;
-    overflow-y: auto; position:relative;}
+    overflow-y: auto;  -webkit-overflow-scrolling:touch; position:relative;}
 .news_list{padding:0px 0px 0px 20px; min-height:300px;}
 .dsnews_list{padding:0px 0px 0px 20px; min-height:300px;}
 .list_images img{width:100%;
@@ -99,6 +99,7 @@ border: 1px solid #CCCCCC;
   /*  margin: 0 0 100px; */
    overflow-x:hidden;
    overflow-y:auto;
+   -webkit-overflow-scrolling:touch;
 }
 .more_info{padding:10px 10px;}
 
@@ -120,7 +121,7 @@ box-shadow: 0px 3px 8px rgb(100,100,100);border-radius:8px;}
 .images_area img{width:100%; padding:2px;border:1px solid #ccc;}
 #form_logout{display:none;}
 p{text-align:justify;}
-.tablehidden{width:100%; overflow:hidden; overflow-x:scroll;}
+.tablehidden{width:100%; overflow:hidden; overflow-x:scroll; -webkit-overflow-scrolling:touch;}
 .jobdesc_box{padding:0px 10px;}
 .datetimejobs{font-size:12px; color:#ADADAD;}
 .jobs_descr_box > p{  font-size: 12px;}
@@ -167,7 +168,7 @@ top: 100%;
 left: 0px;
 background: none repeat scroll 0% 0% #FFF;
 width: 100%;
-padding: 10px 5px; overflow:auto; height:100%; display:none;}
+padding: 10px 5px; overflow:auto; height:100%; display:none; -webkit-overflow-scrolling:touch;}
 .headingcontent .menu_click{padding:0px 0px;}
 .contentdescription{margin:10px 0px 0px 0px; padding:0px 12px;}
 .contentdescription h3{font-size:20px; color:#AD0004;}
