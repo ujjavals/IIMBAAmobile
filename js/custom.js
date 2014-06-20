@@ -93,7 +93,7 @@ $(document).ready(function(){
 		 */
 		 $("#owl-demo3").owlCarousel({
 					items : 4,
-					itemsMobile : [479,3],
+					itemsMobile : [479,2],
 					pagination : false,
 					 navigation : false,
 					lazyLoad : true,
