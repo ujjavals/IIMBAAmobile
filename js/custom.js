@@ -164,7 +164,7 @@ $(document).ready(function(){
 	
 	});
 	
-	$('.hidden_back').click(function(){
+	$('.menu_click22').click(function(){
 		
 		$('.contentdescription').css("display","none");
 		
