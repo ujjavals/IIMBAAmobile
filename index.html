@@ -7,66 +7,12 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/jquerymobile.css" rel="stylesheet" type="text/css">
 <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
-<link href="../css/owl.theme.css" rel="stylesheet" type="text/css">
- <link rel="stylesheet" href="css/idangerous.swiper.css" type="text/css">
+<link href="css/owl.theme.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width,  minimum-scale=0.5, maximum-scale=2">
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
 <style>
 #section_three{display:block;}
-
-.swiper-container {
-  width: 660px;
-  height: 250px;
-  color: #fff;
-  text-align: center;
-}
-.red-slide {
-  background: #ca4040;
-}
-.blue-slide {
-  background: #4390ee;
-}
-.orange-slide {
-  background: #ff8604;
-}
-.green-slide {
-  background: #49a430;
-}
-.pink-slide {
-  background: #973e76;
-}
-.swiper-slide .title {
-  font-style: italic;
-  font-size: 42px;
-  margin-top: 80px;
-  margin-bottom: 0;
-  line-height: 45px;
-}
-.pagination {
-  position: absolute;
-  z-index: 20;
-  left: 10px;
-  bottom: 10px;
-}
-.swiper-pagination-switch {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 8px;
-  background: #222;
-  margin-right: 5px;
-  opacity: 0.8;
-  border: 1px solid #fff;
-  cursor: pointer;
-}
-.swiper-visible-switch {
-  background: #aaa;
-}
-.swiper-active-switch {
-  background: #fff;
-}
 </style>
 </head>
 <body onload="home2()">
@@ -96,38 +42,23 @@
 					<div class="headinder">
 						<img src="assets/hd_img.jpg" />
 					</div>
-						
-					<div>
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-							  <div class="swiper-slide red-slide">
-								<div class="title">Slide 1</div>
-							  </div>
-							  <div class="swiper-slide blue-slide">
-								<div class="title">Slide 2</div>
-							  </div>
-							  <div class="swiper-slide orange-slide">
-								<div class="title">Slide 3</div>
-							  </div>
-							  <div class="swiper-slide green-slide">
-								<div class="title">Slide 4</div>
-							  </div>
-							  <div class="swiper-slide pink-slide">
-								<div class="title">Slide 5</div>
-							  </div>
-							  <div class="swiper-slide red-slide">
-								<div class="title">Slide 6</div>
-							  </div>
-							  <div class="swiper-slide blue-slide">
-								<div class="title">Slide 7</div>
-							  </div>
-							  <div class="swiper-slide orange-slide">
-								<div class="title">Slide 8</div>
-							  </div>
+					<div style="" class="newsarea">
+						<div class="row headingstrip">
+							<h2>News</h2>
+							<div class="moreoption">
+								<a href="news.html">More</a>
 							</div>
-							<div class="pagination"></div>
-						 </div>
-					</div>
+							<div style="clear:both;"></div>
+						</div>
+						<div class="row home_box newsarea2" >
+							<div class="row " style="text-align:center;margin-top:10px;margin-left:0px;margin-right:0px; ">
+								<div id="owl-demo" class="owl-carousel">
+								</div>
+							</div>
+						</div>	
+						<div style="clear:both;"></div>
+					</div>	
+					
 					<div style="width:100%; height:700px;background:yellow; margin-top:50px;">
 					
 					</div>
@@ -142,17 +73,8 @@
 </div>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/idangerous.swiper-2.1.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
-
-  <script>
-  var mySwiper = new Swiper('.swiper-container',{
-    pagination: '.pagination',
-    paginationClickable: true,
-    slidesPerView: 3
-  })
-  </script>
 <!-- insert in the document head -->
 
 </body>
