@@ -714,6 +714,7 @@ function home2(){
 					pagination : false,
 					 navigation : false,
 					lazyLoad : true,
+					touchDrag : true,
 					
 					}); 
 					
