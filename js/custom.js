@@ -603,7 +603,7 @@ function home(){
 function home2(){
 		/*newssection*********/
 		var started = 0;
-		var ended = 4;
+		var ended = 6;
 		$.ajax({
 				
 				url: "http://www.iimbaa.org/IIMBAA/mobile/news3.php",
