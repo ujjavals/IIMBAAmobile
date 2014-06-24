@@ -176,7 +176,7 @@ $(document).ready(function(){
 	});
 						
 	
-	$(".magzinearea .item_box").click(function(){
+	/* $(".magzinearea .item_box").click(function(){
 					
 				
 					 	var datavalue =  $(this).attr("data");
@@ -187,7 +187,7 @@ $(document).ready(function(){
 						$(".magzine_content").css("display","block")
 						$('.hidden_area').css("display","block");
 						$('.hidden_area').animate({top:'0%'},200); 
-					}); 
+					});  */
 	
 	$("#login_submit").click(function(){
 			var user_name = document.getElementById('user_name').value; 
