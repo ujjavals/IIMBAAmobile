@@ -171,6 +171,7 @@ $(document).ready(function(){
 		$('.hiddensection').css("display","none");
 		
 		$('.hidden_area').animate({top:'100%'},200);
+		$('.hidden_area').css('display','none');
 	
 		
 	});
