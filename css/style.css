@@ -212,7 +212,7 @@ font-size: 13px;}
 /*news*******/
 
 .horizontal_scroll{width:100%;overflow:hidden;overflow-x: scroll;height:200px;}
-.horizontal_scroll2{width:1000px;overflow-x:scroll;}
-.horizontal_scroll2 li{width:150px;height:200px;float:left; list-style:none;}
+.horizontal_scroll2{width:1000px;overflow:hidden; overflow-x:scroll;}
+.horizontal_scroll2 li{width:166px; height:200px;float:left; list-style:none;}
 .horizontal_scroll2 li:nth-child(odd){background:red;}
 .horizontal_scroll2 li:nth-child(even){background:#999;}
