@@ -165,7 +165,7 @@ $(document).ready(function(){
 	});
 	
 	$('.menu_click22').click(function(){
-		
+		alert("click working");
 		$('.contentdescription').css("display","none");
 		
 		$('.hiddensection').css("display","none");
